@@ -1,5 +1,7 @@
 Calculator made with HTML, CSS and JavaScript.
-To access: 
+To access: https://mmatheusproenca.github.io/Calculator-Project/
+
 <hr>
+
 Calculadora feita com HTML, CSS e JavaScript.
-Para acessar: 
+Para acessar: https://mmatheusproenca.github.io/Calculator-Project/
