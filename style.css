@@ -1,0 +1,134 @@
+*{
+   color: black;
+   padding: 0;
+   margin: 0;
+   border: 0;
+   box-sizing: border-box;
+   font-family: Poppins, sans-serif;
+}
+:root {
+   --bg-color: #1d1e21;
+   --border-color: #666;
+   --font-color: white;
+   --primary-color: #4dff91;
+   --error-color: #ff0043;
+ }
+body{
+   background-color: #22262c;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   min-height: 100vh;
+   min-width: 100vw;
+}
+#container{
+   background-color: var(--bg-color);
+   width: 500px;
+   height: 100%px;
+   padding: 20px;
+   border-radius: 5px;
+
+}
+#header{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+
+}
+h1{
+   color: var(--font-color);
+}
+#theme{
+   color: var(--font-color);
+   background-color: transparent;
+   border: 2px solid var(--font-color);
+   border-radius: 3px;
+   width: 30%;
+   height: 35%;
+   cursor: pointer;
+   transition: .15s;
+}
+#theme:hover{
+   background-color: rgba(255, 255, 255, 0.712);
+   color: black;
+
+}
+#expression{
+   margin-top: 10px;
+   width: 100%;
+   background-color: #44464acb;
+   padding: 20px;
+   text-align: end;
+   color: var(--font-color);
+   font-size: 25px;
+   border-radius: 5px;
+}
+#keys>button{
+   background-color: #1f97f4;
+   padding: 15px;
+   border-radius: 5px;
+   font-size: 25px;
+   cursor: pointer;
+   color: var(--font-color);
+}
+#keys>#clear{
+   background-color: red;
+   color: var(--font-color);
+}
+#keys>#clear:hover{
+   background-color: rgb(178, 11, 11);
+}
+#keys>button:hover{
+   background-color: #166bac;
+}
+#keys{
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr 1fr;
+   gap: 1rem;
+   margin: 2rem 0;
+}
+#footer{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+#result{
+   background-color: transparent;
+   border: solid var(--font-color);
+   border-width: 2px;
+   border-radius: 0 .5rem .5rem 0;
+   height: 4.25rem;
+   width: 6rem;
+   padding: 1rem;
+   transition: .15s;
+   width: 100%;
+   color: var(--font-color);
+   text-align: end;
+   font-size: 25px;
+}
+
+#copy{
+   background-color: transparent;
+   border: solid var(--font-color);
+   border-width: 2px;
+   border-radius: .5rem 0 0 .5rem;
+   cursor: pointer;
+   height: 4.25rem;
+   width: 6rem;
+   padding: 1rem;
+   transition: .15s;
+   color: var(--font-color);
+}
+#copy:hover{
+   background-color: rgba(204, 204, 204, 0.382);
+}
+.error{
+   background-color: red !important;
+   color: var(--font-color) !important;
+   font-size: 25px !important;
+
+}
+.success {
+   border-color: var(--primary-color) !important;
+   color: var(--primary-color) !important;
+ }
